@@ -1,5 +1,8 @@
 from setuptools import setup,find_packages
 import re
+
+
+
 def version():
     filename = "nandha_api/__init__.py"
     with open(filename) as f:
@@ -8,6 +11,9 @@ def version():
         raise RuntimeError("{} doesn't contain __version__".format(filename))
     version = match.groups()[0]
     return version
+
+
+
 with open("README.md", encoding="utf8") as readme:
     long_desc = readme.read()
     
@@ -17,17 +23,17 @@ with open("README.md", encoding="utf8") as readme:
 setup(
     name="NandhaAPI",
     version=version(),
-    author="Nandha.t.me",
+    author="Nandhagopal K",
     author_email="nandhaxd@gmail.com",
     description="my python api tool | NandhaAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
     license="MIT",
-    url="https://github.com/nandhaxd/nandhabots-api",
-    download_url="https://github.com/nandhaxd/nandhabots-api/blob/main/README.md",
+    url="https://github.com/nandhaxd/NandhaAPI",
+    download_url="https://github.com/nandhaxd/NandhaAPI/blob/main/README.md",
     install_requires=["requests"],
-    keywords=['python', "NandhaAPI","NandhaBots", "tgbotapi", "usefultools"],
+    keywords=['python', "NandhaAPI","NandhaBots", "tgbotapi", "Tgbots"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -53,9 +59,9 @@ setup(
     ],
     
     project_urls={
-        "Tracker": "https://github.com/nandhaxd/nandhabots-api/issues",
+        "Tracker": "https://github.com/nandhaxd/NandhaAPI/issues",
         "Community": "https://t.me/nandhasupport",
-        "Source": "https://github.com/nandhaxd/nandhabots-api",
+        "Source": "https://github.com/nandhaxd/NandhaAPI",
     },
     python_requires="~=3.7",
 )
