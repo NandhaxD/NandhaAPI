@@ -11,7 +11,7 @@ __all__ = ["api"]
 api_url = "https://nandha-api.onrender.com/"
 
 
-class nandha-api:
+class NandhaAPI:
      
          def __inint__(self) -> None:
               """Api for various purpose
@@ -160,4 +160,4 @@ class nandha-api:
 
 
 
-api = nandha_api()
+api = NandhaAPI()
