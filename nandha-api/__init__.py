@@ -153,7 +153,7 @@ class NandhaAPI:
                   print(nandha)
               """
               end_point = f"reverse?img_url={url}"
-              nandha = requests.get(api_url+end_point).json()
+              nandha = requests.post(api_url+end_point).json()
               return nandha    
 
 
