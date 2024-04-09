@@ -15,11 +15,11 @@ with open("README.md", encoding="utf8") as readme:
 
 # Setting up
 setup(
-    name="Nandha-API",
+    name="NandhaAPI",
     version=version(),
-    author="Nandha.t.me | IkariS0_0.t.me ",
+    author="Nandha.t.me",
     author_email="nandhaxd@gmail.com",
-    description="my python api tool | Nandha-API",
+    description="my python api tool | NandhaAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
@@ -27,7 +27,7 @@ setup(
     url="https://github.com/nandhaxd/nandhabots-api",
     download_url="https://github.com/nandhaxd/nandhabots-api/blob/main/README.md",
     install_requires=["requests"],
-    keywords=['python', "Nandha-API","NandhaBots", "tgbotapi", "usefultools"],
+    keywords=['python', "NandhaAPI","NandhaBots", "tgbotapi", "usefultools"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
