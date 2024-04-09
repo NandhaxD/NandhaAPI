@@ -26,7 +26,7 @@ setup(
     license="MIT",
     url="https://github.com/nandhaxd/nandhabots-api",
     download_url="https://github.com/nandhaxd/nandhabots-api/blob/main/README.md",
-    install_requires=["requests-html"],
+    install_requires=["requests"],
     keywords=['python', "Nandha-API","NandhaBots", "tgbotapi", "usefultools"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
