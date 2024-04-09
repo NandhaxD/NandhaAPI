@@ -4,7 +4,7 @@ import re
 
 
 def version():
-    filename = "nandha_api/__init__.py"
+    filename = "NandhaAPI/__init__.py"
     with open(filename) as f:
         match = re.search(r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M)
     if not match:
