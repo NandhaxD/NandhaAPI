@@ -9,10 +9,11 @@ api_url = "https://nandha-api.onrender.com/"
 class NandhaAPI:
     
     def __init__(self) -> None:
-        """Api for various purpose
+        kela = """Api for various purpose
         support group: NandhaSupport.t.me
         made by: NandhaBots.t.me
-        """        
+        """    
+        return print(kela)
 
     @staticmethod
     def imagine(query: str):
