@@ -12,8 +12,7 @@ class NandhaAPI:
         """Api for various purpose
         support group: NandhaSupport.t.me
         made by: NandhaBots.t.me
-        """
-        pass
+        """        
 
     @staticmethod
     def imagine(query: str):
