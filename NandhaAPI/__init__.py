@@ -4,7 +4,7 @@ from urllib.parse import quote
 
 api_url = "https://nandha-api.onrender.com/"
 
-class NandhaAPI:
+class Nandha:
     
     def __init__(self) -> None:
         nandha = """
