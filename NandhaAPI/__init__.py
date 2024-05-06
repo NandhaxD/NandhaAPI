@@ -15,6 +15,20 @@ class NandhaAPI:
         return print(nandha)
 
     @staticmethod
+    example = (
+        "from NandhaAPI import ai\n"
+        "print(ai('gpt', 'hello'))"
+    )
+    def ai(model: str, query: str):
+        avb = ['gpt', 'palm', 'bard']
+        if not model in avb:
+            return example
+        prompt = quote(query)
+        end_point = f'ai/{model}/{prompt}'
+        nandha = requests.get(api_url + end_point).json()
+        return nandha
+
+    @staticmethod
     def imagine(query: str):
         prompt = quote(query)
         end_point = f"imagine?prompt={prompt}"
@@ -46,10 +60,17 @@ class NandhaAPI:
         end_point = "couples"
         nandha = requests.get(api_url + end_point).json()
         return nandha
+        
+    @staticmethod
+    def ud(query: str, limit: int = 5):
+         query = quote(query)
+         end_point = f'ud?query={query}&max={limit}'
+         nandha = requests.get(api_url + end_point).json()
+         return nandha
 
     @staticmethod
-    def guess():
-        end_point = "guess"
+    def anime_quote():
+        end_point = "animequote"
         nandha = requests.get(api_url + end_point).json()
         return nandha
 
