@@ -1,8 +1,6 @@
 import requests
 from urllib.parse import quote
 
-__version__ = "0.1"
-__all__ = ["api"]
 
 api_url = "https://nandha-api.onrender.com/"
 
@@ -149,5 +147,3 @@ class NandhaAPI:
         end_point = f"reverse?img_url={url}"
         nandha = requests.post(api_url + end_point).json()
         return nandha    
-
-api = NandhaAPI()
