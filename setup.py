@@ -1,17 +1,4 @@
-from setuptools import setup,find_packages
-import re
-
-
-
-def version():
-    filename = "NandhaAPI/__init__.py"
-    with open(filename) as f:
-        match = re.search(r"""^__version__ = ['"]([^'"]*)['"]""", f.read(), re.M)
-    if not match:
-        raise RuntimeError("{} doesn't contain __version__".format(filename))
-    version = match.groups()[0]
-    return version
-
+from setuptools import setup, find_packages
 
 
 with open("README.md", encoding="utf8") as readme:
@@ -22,10 +9,10 @@ with open("README.md", encoding="utf8") as readme:
 # Setting up
 setup(
     name="NandhaAPI",
-    version=version(),
-    author="Nandhagopal K",
+    version='0.1',
+    author="Nandha K",
     author_email="nandhaxd@gmail.com",
-    description="my python api tool | NandhaAPI",
+    description="My python api tool | NandhaAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
