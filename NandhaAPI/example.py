@@ -1,7 +1,10 @@
 #example.py
 
-from NandhaAPI import ai, stylefont, ud
+from NandhaAPI import NandhaAPI
 
-print(ai('gpt', 'hello'))
-print(stylefont('nandha'))
-print(ud('hi'))
+
+api = NandhaAPI()
+
+print(api.ai('gpt', 'hello'))
+print(api.stylefont('nandha'))
+print(api.ud('hi'))
