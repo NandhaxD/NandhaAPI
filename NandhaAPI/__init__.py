@@ -8,8 +8,8 @@ class Nandha:
     
     def __init__(self) -> None:
         nandha = """
-        Python API tool for various purpose
-        Support Group: NandhaSupport.t.me
+        Python API tool:
+        \nSupport Group: NandhaSupport.t.me\n
         Support Channel: NandhaBots.t.me
         """    
         return print(nandha)
@@ -59,8 +59,9 @@ class Nandha:
         return nandha
 
     @staticmethod
-    def couple():
+    def couples():
         end_point = "couples"
+        #https://nandha-api.onrender.com/couples
         nandha = requests.get(api_url + end_point).json()
         return nandha
         
