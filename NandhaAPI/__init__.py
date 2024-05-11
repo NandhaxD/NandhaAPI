@@ -9,8 +9,8 @@ class Nandha:
     def __init__(self) -> None:
         nandha = """
         Python API tool:
-        \nSupport Group: NandhaSupport.t.me\n
-        Support Channel: NandhaBots.t.me
+        \nSupport Group: NandhaSupport.t.me
+        \nSupport Channel: NandhaBots.t.me
         """    
         return print(nandha)
 
