@@ -14,12 +14,15 @@ class Nandha:
         """    
         return print(nandha)
 
+    
+    
     @staticmethod
-    example = (
+    def ai(model: str, query: str):
+        example = (
         "from NandhaAPI import ai\n"
         "print(ai('gpt', 'hello'))"
-    )
-    def ai(model: str, query: str):
+        )
+
         avb = ['gpt', 'palm', 'bard']
         if not model in avb:
             return example
