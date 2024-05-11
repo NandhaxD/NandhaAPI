@@ -35,7 +35,7 @@ class Nandha:
     def imagine(query: str):
         prompt = quote(query)
         end_point = f"imagine?prompt={prompt}"
-        nandha = requests.get(api_url + end_point).json()
+        nandha = api_url + end_point
         return nandha
 
     @staticmethod
